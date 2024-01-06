@@ -66,6 +66,7 @@ root.title("Find the Biggest Number")
 root.geometry("800x380")
 root.iconbitmap(r'C:\Users\Princess\Desktop\Assignments\print_biggest_number\numbersymbol.ico')
 root.configure(bg="cyan")
+root.resizable(False, False)
 
 # left and right icons 
 left_icon_path = r"C:\Users\Princess\Desktop\Assignments\print_biggest_number\icon.png"
