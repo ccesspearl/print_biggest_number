@@ -2,6 +2,8 @@
 
 # Pseudocode
 # ask user to input 3 numbers
+print("We will ask you to input 3 numbers. In order to find the biggest number, you will only input numbers and not letters. Do not input same numbers.")
+
 # ask user to input 1st number
 # ask user to input 2nd number
 # ask user to input 3rd number
