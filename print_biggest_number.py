@@ -13,7 +13,7 @@
 #second_number = float(input("Input second number: ")) 
 
 # ask user to input 3rd number
-#third_number = int(input("Input third number: "))
+#third_number = float(input("Input third number: "))
 
 # check if the first number is bigger
 #if first_number > second_number and first_number > third_number:
@@ -38,6 +38,7 @@
 import tkinter as tk
 
 # Turning the previous code into def function 
+# Finding the biggest number
 def find_biggest():
     first_number = float(entry1.get())
     second_number = float(entry2.get())
@@ -51,4 +52,13 @@ def find_biggest():
         biggest = third_number
 
     result_label.config(result_label.config(text=f"{biggest} is the biggest number"))
+
+# Tkinter Main Window 
+root = tk.Tk()
+root.title("Find the Biggest Number")
+root.geometry("650x350")
+root.iconbitmap(r'numbersymbol.ico')
+
+root.mainloop()
+
 
