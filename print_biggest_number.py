@@ -37,8 +37,8 @@
 # using Tkinter 
 import tkinter as tk
 
-# Turning the previous code into def function 
-# Finding the biggest number
+# turning the previous code into def function 
+# finding the biggest number
 def find_biggest():
     first_number = float(entry1.get())
     second_number = float(entry2.get())
@@ -53,11 +53,16 @@ def find_biggest():
 
     result_label.config(result_label.config(text=f"{biggest} is the biggest number"))
 
-# Tkinter Main Window 
+# creating main window
 root = tk.Tk()
 root.title("Find the Biggest Number")
 root.geometry("650x350")
-root.iconbitmap(r'numbersymbol.ico')
+root.iconbitmap(r'C:\Users\Princess\Desktop\python\learn\favicon (1).ico')
+root.configure(bg="cyan")
+
+# creating upper frame
+upper_frame = tk.Frame(root, bg="yellow")
+upper_frame.pack(fill="both")
 
 root.mainloop()
 
