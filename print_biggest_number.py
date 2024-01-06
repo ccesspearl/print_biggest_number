@@ -13,6 +13,8 @@ first_number = float(input("Input first number: "))
 second_number = float(input("Input second number: ")) 
 
 # ask user to input 3rd number
+third_number = int(input("Input third number: "))
+
 # check if the first number is bigger
 # check if the second number is bigger
 # check if the third number is bigger
