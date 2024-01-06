@@ -124,7 +124,7 @@ lower_frame = tk.Frame(root, bg="cyan")
 lower_frame.pack()
 
 # creating submit button 
-submit_button = tk.Button(lower_frame, text="Submit", command=find_biggest)
+submit_button = tk.Button(lower_frame, text="Submit", command=find_biggest, bg="yellow")
 submit_button.pack(pady=10)
 
 # labeling to display the result
