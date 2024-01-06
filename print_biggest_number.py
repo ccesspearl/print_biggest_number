@@ -93,6 +93,10 @@ tk.Label(middle_frame, text="Input third number: ", bg="cyan").pack()
 entry3 = tk.Entry(middle_frame)
 entry3.pack()
 
+# creating lower frame
+lower_frame = tk.Frame(root, bg="cyan")
+lower_frame.pack()
+
 root.mainloop()
 
 
