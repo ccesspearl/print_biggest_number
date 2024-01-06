@@ -10,6 +10,8 @@ print ()
 first_number = float(input("Input first number: "))
 
 # ask user to input 2nd number
+second_number = float(input("Input second number: ")) 
+
 # ask user to input 3rd number
 # check if the first number is bigger
 # check if the second number is bigger
