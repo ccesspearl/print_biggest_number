@@ -76,6 +76,23 @@ middle_frame.pack(fill="both")
 text_label = tk.Label(middle_frame, text="\nWe will ask you to input 3 numbers. In order to find the biggest number, \nyou will only input numbers and not letters. Do not input same numbers.\n", font=("Courier", 10), bg="cyan")
 text_label.pack()
 
+# creating input labels and entry widgets
+
+# asking user to input the first number 
+tk.Label(middle_frame, text="Input first number: ", bg="cyan").pack()
+entry1 = tk.Entry(middle_frame)
+entry1.pack()
+
+# asking user to input the second number 
+tk.Label(middle_frame, text="Input second number: ", bg="cyan").pack()
+entry2 = tk.Entry(middle_frame)
+entry2.pack()
+
+# asking user to input the third number 
+tk.Label(middle_frame, text="Input third number: ", bg="cyan").pack()
+entry3 = tk.Entry(middle_frame)
+entry3.pack()
+
 root.mainloop()
 
 
