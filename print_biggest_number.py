@@ -68,6 +68,10 @@ upper_frame.pack(fill="both")
 title_label = tk.Label(upper_frame, text=("THE SEARCH FOR BIGGEST NUMBER "),fg="black", font=("8514oem", 25), bg="yellow")
 title_label.pack()
 
+# creating middle frame
+middle_frame = tk.Frame(root, bg="cyan")
+middle_frame.pack(fill="both")
+
 root.mainloop()
 
 
