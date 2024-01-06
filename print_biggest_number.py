@@ -63,17 +63,36 @@ def find_biggest():
 # creating main window
 root = tk.Tk()
 root.title("Find the Biggest Number")
-root.geometry("650x350")
-root.iconbitmap(r'C:\Users\Princess\Desktop\python\learn\favicon (1).ico')
+root.geometry("800x380")
+root.iconbitmap(r'C:\Users\Princess\Desktop\Assignments\print_biggest_number\numbersymbol.ico')
 root.configure(bg="cyan")
+
+# left and right icons 
+left_icon_path = r"C:\Users\Princess\Desktop\Assignments\print_biggest_number\icon.png"
+right_icon_path = r"C:\Users\Princess\Desktop\Assignments\print_biggest_number\icon.png"
+
+left_icon = tk.PhotoImage(file=left_icon_path)
+right_icon = tk.PhotoImage(file=right_icon_path)
 
 # creating upper frame
 upper_frame = tk.Frame(root, bg="yellow")
 upper_frame.pack(fill="both")
 
-# adding title 
-title_label = tk.Label(upper_frame, text=("THE SEARCH FOR BIGGEST NUMBER "),fg="black", font=("8514oem", 25), bg="yellow")
-title_label.pack()
+# creating a title frame for left and right icon 
+title_frame = tk.Frame(upper_frame, bg="yellow")
+title_frame.pack()
+
+# adding left icon
+left_icon_label = tk.Label(title_frame, image=left_icon, bg="yellow")
+left_icon_label.pack(side="left")
+
+# adding title
+title_label = tk.Label(title_frame, text="THE SEARCH FOR BIGGEST NUMBER", fg="black", font=("8514oem", 25), bg="yellow")
+title_label.pack(side="left", padx=10) 
+
+# adding right icon
+right_icon_label = tk.Label(title_frame, image=right_icon, bg="yellow")
+right_icon_label.pack(side="left")
 
 # creating middle frame
 middle_frame = tk.Frame(root, bg="cyan")
