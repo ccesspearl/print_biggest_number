@@ -64,6 +64,10 @@ root.configure(bg="cyan")
 upper_frame = tk.Frame(root, bg="yellow")
 upper_frame.pack(fill="both")
 
+# adding title 
+title_label = tk.Label(upper_frame, text=("THE SEARCH FOR BIGGEST NUMBER "),fg="black", font=("8514oem", 25), bg="yellow")
+title_label.pack()
+
 root.mainloop()
 
 
