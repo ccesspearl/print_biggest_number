@@ -101,6 +101,10 @@ lower_frame.pack()
 submit_button = tk.Button(lower_frame, text="Submit", command=find_biggest)
 submit_button.pack(pady=10)
 
+# labeling to display the result
+result_label = tk.Label(lower_frame, text="", bg="cyan")
+result_label.pack(pady=10)
+
 root.mainloop()
 
 
