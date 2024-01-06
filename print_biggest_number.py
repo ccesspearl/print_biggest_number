@@ -16,6 +16,17 @@ second_number = float(input("Input second number: "))
 third_number = int(input("Input third number: "))
 
 # check if the first number is bigger
+if first_number > second_number and first_number > third_number:
+    biggest = first_number
+
 # check if the second number is bigger
+elif second_number > first_number and second_number > third_number:
+    biggest = second_number
+
 # check if the third number is bigger
+else:
+    biggest = third_number 
+
 # print the biggest number
+print()
+print(biggest, "is the biggest number")
