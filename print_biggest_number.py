@@ -51,7 +51,14 @@ def find_biggest():
     else:
         biggest = third_number
 
-    result_label.config(result_label.config(text=f"{biggest} is the biggest number"))
+    result_label.config(
+        text=f"{biggest} is the biggest number.",
+        font=("Courier", 13, "bold"),
+        fg="blue", 
+        bg="light green",
+        border=1,  
+        relief="solid"
+    )
 
 # creating main window
 root = tk.Tk()
