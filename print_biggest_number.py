@@ -72,6 +72,10 @@ title_label.pack()
 middle_frame = tk.Frame(root, bg="cyan")
 middle_frame.pack(fill="both")
 
+# reminding the users 
+text_label = tk.Label(middle_frame, text="\nWe will ask you to input 3 numbers. In order to find the biggest number, \nyou will only input numbers and not letters. Do not input same numbers.\n", font=("Courier", 10), bg="cyan")
+text_label.pack()
+
 root.mainloop()
 
 
