@@ -7,7 +7,7 @@
 #print ()
 
 # ask user to input 1st number
-#first_number = float(input("Input first number: "))
+#first_number = float(input("Input first number: "))G
 
 # ask user to input 2nd number
 #second_number = float(input("Input second number: ")) 
@@ -41,27 +41,34 @@ import tkinter as tk
 # turning the previous code into def function 
 # creating def function to find the biggest number
 def find_biggest():
-    first_number = float(entry1.get())
-    second_number = float(entry2.get())
-    third_number = float(entry3.get())
+    
+    #limiting the user to only input numbers 
+    try:
+        first_number = float(entry1.get())
+        second_number = float(entry2.get())
+        third_number = float(entry3.get())
+    
+        if first_number > second_number and first_number > third_number:
+            biggest = first_number
+        elif second_number > first_number and second_number > third_number:
+            biggest = second_number
+        else:
+            biggest = third_number
 
-    if first_number > second_number and first_number > third_number:
-        biggest = first_number
-    elif second_number > first_number and second_number > third_number:
-        biggest = second_number
-    else:
-        biggest = third_number
-
-      # Create a new window for displaying the result
+        # Create a new window for displaying the result
         result_window = tk.Toplevel(root)
         result_window.title("Result")
         result_window.geometry("450x70")
         result_window.configure(bg="light green")
-        result_window.iconbitmap(r'C:\Users\Princess\Desktop\Assignments\print_biggest_number\check.ico')
+        result_window.iconbitmap(r'C:\Users\Princess\Desktop\python\learn\check.ico')
         result_window.resizable(False, False)
-        
+
         result_label = tk.Label(result_window, text=f"{biggest} is the biggest number  ✔️", font=("Courier", 13, "bold"), fg="dark blue", bg="yellow", border=1,  relief="solid")
         result_label.pack(padx=20, pady=20)
+
+    except ValueError:
+        error_label = tk.Label(root, text="❌ Please input valid numbers ❌", font=("Courier", 13, "bold"), fg="white", bg= "red", border=1,  relief="solid")
+        error_label.pack(padx=20, pady=20)
 
 # creating main window
 root = tk.Tk()
