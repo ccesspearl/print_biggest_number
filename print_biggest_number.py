@@ -7,7 +7,7 @@
 #print ()
 
 # ask user to input 1st number
-#first_number = float(input("Input first number: "))G
+#first_number = float(input("Input first number: "))
 
 # ask user to input 2nd number
 #second_number = float(input("Input second number: ")) 
@@ -40,10 +40,14 @@ import tkinter as tk
 
 # turning the previous code into def function 
 # creating def function to find the biggest number
+
 def find_biggest():
-    
-    #limiting the user to only input numbers 
+    global error_label 
     try:
+        if error_label:
+            error_label.destroy()
+            error_label = None
+
         first_number = float(entry1.get())
         second_number = float(entry2.get())
         third_number = float(entry3.get())
@@ -69,6 +73,9 @@ def find_biggest():
     except ValueError:
         error_label = tk.Label(root, text="❌ Please input valid numbers ❌", font=("Courier", 13, "bold"), fg="white", bg= "red", border=1,  relief="solid")
         error_label.pack(padx=20, pady=20)
+
+# declaring of error_label as none outside the function 
+error_label = None 
 
 # creating main window
 root = tk.Tk()
