@@ -117,7 +117,7 @@ middle_frame = tk.Frame(root, bg="cyan")
 middle_frame.pack(fill="both")
 
 # reminding the users 
-text_label = tk.Label(middle_frame, text="\nWe will ask you to input 3 numbers. In order to find the biggest number, \nyou will only input numbers and not letters. Do not input same numbers.\n", font=("Courier", 10), bg="cyan")
+text_label = tk.Label(middle_frame, text="\n Please write only 3 numbers. In order to find the biggest number, \nyou will only input valid numbers and not letters or other symbols.\n", font=("Courier", 10), bg="cyan")
 text_label.pack()
 
 # creating input labels and entry widgets
