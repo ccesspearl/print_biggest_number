@@ -67,7 +67,7 @@ def find_biggest():
         result_window.iconbitmap(r'C:\Users\Princess\Desktop\python\learn\check.ico')
         result_window.resizable(False, False)
 
-        result_label = tk.Label(result_window, text=f"{biggest} is the biggest number  ✔️", font=("Courier", 13, "bold"), fg="dark blue", bg="yellow", border=1,  relief="solid")
+        result_label = tk.Label(result_window, text=f" {biggest} is the biggest number ✔️", font=("Courier", 13, "bold"), fg="dark blue", bg="yellow", border=1,  relief="solid")
         result_label.pack(padx=20, pady=20)
 
     except ValueError:
