@@ -31,14 +31,15 @@
 #print()
 #print(biggest, "is the biggest number")
 
+# ------------------------------------------------------------------------------
 
-
+# ACTUAL CODE 
 
 # using Tkinter 
 import tkinter as tk
 
 # turning the previous code into def function 
-# finding the biggest number
+# creating def function to find the biggest number
 def find_biggest():
     first_number = float(entry1.get())
     second_number = float(entry2.get())
@@ -51,14 +52,16 @@ def find_biggest():
     else:
         biggest = third_number
 
-    result_label.config(
-        text=f"{biggest} is the biggest number.",
-        font=("Courier", 13, "bold"),
-        fg="blue", 
-        bg="light green",
-        border=1,  
-        relief="solid"
-    )
+      # Create a new window for displaying the result
+        result_window = tk.Toplevel(root)
+        result_window.title("Result")
+        result_window.geometry("450x70")
+        result_window.configure(bg="light green")
+        result_window.iconbitmap(r'C:\Users\Princess\Desktop\Assignments\print_biggest_number\check.ico')
+        result_window.resizable(False, False)
+        
+        result_label = tk.Label(result_window, text=f"{biggest} is the biggest number  ✔️", font=("Courier", 13, "bold"), fg="dark blue", bg="yellow", border=1,  relief="solid")
+        result_label.pack(padx=20, pady=20)
 
 # creating main window
 root = tk.Tk()
@@ -127,10 +130,6 @@ lower_frame.pack()
 # creating submit button 
 submit_button = tk.Button(lower_frame, text="Submit", command=find_biggest, bg="yellow")
 submit_button.pack(pady=10)
-
-# labeling to display the result
-result_label = tk.Label(lower_frame, text="", bg="cyan")
-result_label.pack(pady=10)
 
 root.mainloop()
 
